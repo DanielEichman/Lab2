@@ -26,7 +26,7 @@ S = A xor B xor C
 ### 1 bit adder interface
 ![alt tag](https://raw2.github.com/DanielEichman/Lab2/master/interface.JPG)
 ###1 bit adder VHDL
-###1 bit adder Testbench	
+###1 bit adder Testbench	]
 ###1 bit adder Testbench Output
 
 | Cin | A | B | Cout | S |
@@ -39,3 +39,5 @@ S = A xor B xor C
 | 1   | 0 | 1 | 1    | 0 |
 | 1   | 1 | 0 | 1    | 0 |
 | 1   | 1 | 1 | 1    | 1 |
+
+![alt tag](https://raw2.github.com/DanielEichman/Lab2/master/Full_Adder_testbench.JPG)
