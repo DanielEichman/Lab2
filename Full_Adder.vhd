@@ -40,7 +40,8 @@ end Full_Adder;
 architecture Structural of Full_Adder is
 
 begin
-
+S <= A xor B xor Cin;
+Cout <= (A and B) or (A and Cin) or (B and Cin);
 
 end Structural;
 
