@@ -1,5 +1,6 @@
 Lab2
 ====
+##PreLab
 ###1 bit adder Truth Table (With Carry in)
 
 | Cin | A | B | Cout | S |
