@@ -127,9 +127,3 @@ BEGIN
    end process;
 
 END;
-
-
-      wait;
-   end process;
-
-END;
