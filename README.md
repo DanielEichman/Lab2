@@ -43,3 +43,8 @@ S = A xor B xor C
 | 1   | 1 | 1 | 1    | 1 |
 
 ![alt tag](https://raw2.github.com/DanielEichman/Lab2/master/Full_Adder_testbench.JPG)
+
+### Error log
+The only error I had was switching the inputs order in the truth table. Luckily we are creating an adder so it didn't matter. 
+
+
