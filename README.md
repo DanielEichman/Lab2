@@ -14,7 +14,8 @@ Lab2
 | 1   | 1 | 0 | 1    | 0 |
 | 1   | 1 | 1 | 1    | 1 |
 
-Cout =  AB + ACin + BCin
+Cout =  AB + ACin + BCin + ABCin
+Cout = AB + ACin + BCin
 
 S = A xor B xor C
 
