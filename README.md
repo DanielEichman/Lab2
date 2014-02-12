@@ -43,6 +43,20 @@ S = A xor B xor C
 | 1   | 1 | 1 | 1    | 1 |
 
 ![alt tag](https://raw2.github.com/DanielEichman/Lab2/master/Full_Adder_testbench.JPG)
+##Lab
+###4 bit adder Testbench
+![Link] (https://github.com/DanielEichman/Lab2/blob/master/Four_bit_adder_testbench.vhd)
+###4 bit adder VHDL
+![Link](https://github.com/DanielEichman/Lab2/blob/master/Four_bit_adder.vhd)
+###.ucf File
+![Link](https://github.com/DanielEichman/Lab2/blob/master/Four_bit_adder.ucf)
+###Any other files used to implement extra functionality
+None.
+###Final circuit schematic with device labels 
+###4 bit adder Testbench output
+![alt tage](https://raw2.github.com/DanielEichman/Lab2/master/Four_bit_Adder_testbench.JPG)
+![Data File](https://github.com/DanielEichman/Lab2/blob/master/Four_bit_testbench.txt)
+###Full account of design process
 
 ### Error log
 The only error I had was switching the inputs order in the truth table. Luckily we are creating an adder so it didn't matter. 
