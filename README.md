@@ -53,6 +53,7 @@ S = A xor B xor C
 ###Any other files used to implement extra functionality
 None.
 ###Final circuit schematic with device labels 
+![alt tag](https://raw2.github.com/DanielEichman/Lab2/master/Final_Schematic.jpg)
 ###4 bit adder Testbench output
 ![alt tage](https://raw2.github.com/DanielEichman/Lab2/master/Four_bit_Adder_testbench.JPG)
 ![Data File](https://github.com/DanielEichman/Lab2/blob/master/Four_bit_testbench.txt)
