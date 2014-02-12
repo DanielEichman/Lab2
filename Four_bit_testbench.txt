@@ -1,4 +1,23 @@
 # run 27000ns
+at 100 ns: Note: When A = '0''0''0''0'And B = '0''0''0''0'And sub = '0'Output = '0''0''0''0'Overflow = '0' (/four_bit_adder_testbench/).
+at 150 ns: Note: When A = '0''0''0''0'And B = '0''0''0''1'And sub = '0'Output = '0''0''0''1'Overflow = '0' (/four_bit_adder_testbench/).
+at 200 ns: Note: When A = '0''0''0''0'And B = '0''0''1''0'And sub = '0'Output = '0''0''1''0'Overflow = '0' (/four_bit_adder_testbench/).
+at 250 ns: Note: When A = '0''0''0''0'And B = '0''0''1''1'And sub = '0'Output = '0''0''1''1'Overflow = '0' (/four_bit_adder_testbench/).
+at 300 ns: Note: When A = '0''0''0''0'And B = '0''1''0''0'And sub = '0'Output = '0''1''0''0'Overflow = '0' (/four_bit_adder_testbench/).
+at 350 ns: Note: When A = '0''0''0''0'And B = '0''1''0''1'And sub = '0'Output = '0''1''0''1'Overflow = '0' (/four_bit_adder_testbench/).
+at 400 ns: Note: When A = '0''0''0''0'And B = '0''1''1''0'And sub = '0'Output = '0''1''1''0'Overflow = '0' (/four_bit_adder_testbench/).
+at 450 ns: Note: When A = '0''0''0''0'And B = '0''1''1''1'And sub = '0'Output = '0''1''1''1'Overflow = '0' (/four_bit_adder_testbench/).
+at 500 ns: Note: When A = '0''0''0''0'And B = '1''0''0''0'And sub = '0'Output = '1''0''0''0'Overflow = '0' (/four_bit_adder_testbench/).
+at 550 ns: Note: When A = '0''0''0''0'And B = '1''0''0''1'And sub = '0'Output = '1''0''0''1'Overflow = '0' (/four_bit_adder_testbench/).
+at 600 ns: Note: When A = '0''0''0''0'And B = '1''0''1''0'And sub = '0'Output = '1''0''1''0'Overflow = '0' (/four_bit_adder_testbench/).
+at 650 ns: Note: When A = '0''0''0''0'And B = '1''0''1''1'And sub = '0'Output = '1''0''1''1'Overflow = '0' (/four_bit_adder_testbench/).
+at 700 ns: Note: When A = '0''0''0''0'And B = '1''1''0''0'And sub = '0'Output = '1''1''0''0'Overflow = '0' (/four_bit_adder_testbench/).
+at 750 ns: Note: When A = '0''0''0''0'And B = '1''1''0''1'And sub = '0'Output = '1''1''0''1'Overflow = '0' (/four_bit_adder_testbench/).
+at 800 ns: Note: When A = '0''0''0''0'And B = '1''1''1''0'And sub = '0'Output = '1''1''1''0'Overflow = '0' (/four_bit_adder_testbench/).
+at 850 ns: Note: When A = '0''0''0''0'And B = '1''1''1''1'And sub = '0'Output = '1''1''1''1'Overflow = '0' (/four_bit_adder_testbench/).
+at 950 ns: Note: When A = '0''0''0''1'And B = '0''0''0''0'And sub = '0'Output = '0''0''0''1'Overflow = '0' (/four_bit_adder_testbench/).
+at 1000 ns: Note: When A = '0''0''0''1'And B = '0''0''0''1'And sub = '0'Output = '0''0''1''0'Overflow = '0' (/four_bit_adder_testbench/).
+at 1050 ns: Note: When A = '0''0''0''1'And B = '0''0''1''0'And sub = '0'Output = '0''0''1''1'Overflow = '0' (/four_bit_adder_testbench/).
 at 1100 ns: Note: When A = '0''0''0''1'And B = '0''0''1''1'And sub = '0'Output = '0''1''0''0'Overflow = '0' (/four_bit_adder_testbench/).
 at 1150 ns: Note: When A = '0''0''0''1'And B = '0''1''0''0'And sub = '0'Output = '0''1''0''1'Overflow = '0' (/four_bit_adder_testbench/).
 at 1200 ns: Note: When A = '0''0''0''1'And B = '0''1''0''1'And sub = '0'Output = '0''1''1''0'Overflow = '0' (/four_bit_adder_testbench/).
