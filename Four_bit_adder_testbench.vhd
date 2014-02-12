@@ -88,11 +88,13 @@ for I in 0 to 1 loop
 						 & std_logic'image(B(0))
 						 &"And sub = "
 						 & std_logic'image(sub)
-						 &"When Output = "
+						 &"Output = "
 						 & std_logic'image(Oput(3))				
 						 & std_logic'image(Oput(2))
 						 & std_logic'image(Oput(1))				
 						 & std_logic'image(Oput(0))
+						 &"Overflow = "
+						 & std_logic'image(overflow)
 					SEVERITY NOTE;
 					B<=B+1;
 				end loop;
