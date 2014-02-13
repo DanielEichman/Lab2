@@ -71,37 +71,73 @@ BEGIN
    -- Stimulus process
    stim_proc: process
    begin	
-for I in 0 to 1 loop	
+--	A<="0000";
+--	B<="0000";
+--	sub<="0";
+
      	for I in 0 to 15 loop
 			wait for 50 ns;
 				for I in 0 to 15 loop
 					wait for 50 ns;
-					REPORT "When A = "
-						 & std_logic'image(A(3))				
-						 & std_logic'image(A(2))
-						 & std_logic'image(A(1))				
-						 & std_logic'image(A(0))
-						 &"And B = "
-						 & std_logic'image(B(3))				
-						 & std_logic'image(B(2))
-						 & std_logic'image(B(1))				
-						 & std_logic'image(B(0))
-						 &"And sub = "
-						 & std_logic'image(sub)
-						 &"Output = "
-						 & std_logic'image(Oput(3))				
-						 & std_logic'image(Oput(2))
-						 & std_logic'image(Oput(1))				
-						 & std_logic'image(Oput(0))
-						 &"Overflow = "
-						 & std_logic'image(overflow)
+--					REPORT "When A = "
+--						 & std_logic'image(A(3))				
+--						 & std_logic'image(A(2))
+--						 & std_logic'image(A(1))				
+--						 & std_logic'image(A(0))
+--						 &"And B = "
+--						 & std_logic'image(B(3))				
+--						 & std_logic'image(B(2))
+--						 & std_logic'image(B(1))				
+--						 & std_logic'image(B(0))
+--						 &"And sub = "
+--						 & std_logic'image(sub)
+--						 &"Output = "
+--						 & std_logic'image(Oput(3))				
+--						 & std_logic'image(Oput(2))
+--						 & std_logic'image(Oput(1))				
+--						 & std_logic'image(Oput(0))
+--						 &"Overflow = "
+--						 & std_logic'image(overflow)
+--					SEVERITY NOTE;
+					assert (Oput = A + B) report "Error"
 					SEVERITY NOTE;
 					B<=B+1;
 				end loop;
 			A <= A + 1;
 		end loop;
-	sub<='1';
-end loop;	
+		sub<='1';
+		for I in 0 to 15 loop
+			wait for 50 ns;
+				for I in 0 to 15 loop
+					wait for 50 ns;
+--					REPORT "When A = "
+--						 & std_logic'image(A(3))				
+--						 & std_logic'image(A(2))
+--						 & std_logic'image(A(1))				
+--						 & std_logic'image(A(0))
+--						 &"And B = "
+--						 & std_logic'image(B(3))				
+--						 & std_logic'image(B(2))
+--						 & std_logic'image(B(1))				
+--						 & std_logic'image(B(0))
+--						 &"And sub = "
+--						 & std_logic'image(sub)
+--						 &"Output = "
+--						 & std_logic'image(Oput(3))				
+--						 & std_logic'image(Oput(2))
+--						 & std_logic'image(Oput(1))				
+--						 & std_logic'image(Oput(0))
+--						 &"Overflow = "
+--						 & std_logic'image(overflow)
+--					SEVERITY NOTE;
+					assert (Oput = A - B) report "Error"
+					SEVERITY NOTE;
+					B<=B+1;
+				end loop;
+			A <= A + 1;
+		end loop;
+	
+	
 		wait;
    end process;
 
