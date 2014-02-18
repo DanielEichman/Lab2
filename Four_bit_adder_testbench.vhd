@@ -1,6 +1,6 @@
 --------------------------------------------------------------------------------
--- Company: 
--- Engineer:
+-- Company: USAFA
+-- Engineer: Daniel Eichman
 --
 -- Create Date:   21:34:17 02/11/2014
 -- Design Name:   
@@ -40,7 +40,6 @@ END Four_bit_adder_testbench;
 ARCHITECTURE behavior OF Four_bit_adder_testbench IS 
  
     -- Component Declaration for the Unit Under Test (UUT)
- 
     COMPONENT Four_bit_adder
     PORT(
 		signal A: IN std_logic_vector( 3 downto 0);
@@ -49,10 +48,11 @@ ARCHITECTURE behavior OF Four_bit_adder_testbench IS
 		signal sub: IN std_logic;
 		signal overflow: OUT std_logic
 	);
-    END COMPONENT;
+   END COMPONENT;
+	--initialize input's that helped debug
 	signal A: std_logic_vector (3 downto 0) := (others => '0');
 	signal B: std_logic_vector (3 downto 0) := (others => '0');
-	signal Oput: std_logic_vector (3 downto 0);-- := (others => '0');
+	signal Oput: std_logic_vector (3 downto 0);
 	signal sub: std_logic := '0';
 	signal overflow: std_logic;
 BEGIN
@@ -65,20 +65,14 @@ BEGIN
 										sub=>sub,
 										overflow=>overflow
 								);
-
- 
-
-   -- Stimulus process
    stim_proc: process
    begin	
---	A<="0000";
---	B<="0000";
---	sub<="0";
 
-     	for I in 0 to 15 loop
+     	for I in 0 to 15 loop--Loop for A
 			wait for 50 ns;
-				for I in 0 to 15 loop
+				for I in 0 to 15 loop--Loop for B
 					wait for 50 ns;
+					--This was there as i attached the output for evey value as you can't see them in the photo
 --					REPORT "When A = "
 --						 & std_logic'image(A(3))				
 --						 & std_logic'image(A(2))
@@ -105,11 +99,12 @@ BEGIN
 				end loop;
 			A <= A + 1;
 		end loop;
-		sub<='1';
-		for I in 0 to 15 loop
+		sub<='1';--changed to SUBTRACTION
+		for I in 0 to 15 loop--loop for A
 			wait for 50 ns;
-				for I in 0 to 15 loop
+				for I in 0 to 15 loop--loop for B
 					wait for 50 ns;
+					--This was there as i attached the output for evey value as you can't see them in the photo
 --					REPORT "When A = "
 --						 & std_logic'image(A(3))				
 --						 & std_logic'image(A(2))
@@ -136,8 +131,6 @@ BEGIN
 				end loop;
 			A <= A + 1;
 		end loop;
-	
-	
 		wait;
    end process;
 

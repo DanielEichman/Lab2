@@ -38,10 +38,8 @@ entity Full_Adder is
 end Full_Adder;
 
 architecture Structural of Full_Adder is
-
 begin
-S <= A xor B xor Cin;
-Cout <= (A and B) or (A and Cin) or (B and Cin);
-
+S <= A xor B xor Cin;--Sum 
+Cout <= (A and B) or (A and Cin) or (B and Cin);--Carry out
 end Structural;
 
